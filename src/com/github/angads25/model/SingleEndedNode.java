@@ -5,11 +5,24 @@ package com.github.angads25.model;
  * </p>
  */
 public class SingleEndedNode {
-    public String data;
-    public SingleEndedNode node;
+    private String data;
+    public SingleEndedNode next;
 
     public SingleEndedNode() {
         data = null;
-        node = null;
+        next = null;
+    }
+
+    public SingleEndedNode(String data) {
+        this.data = data;
+        next = null;
+    }
+
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
     }
 }

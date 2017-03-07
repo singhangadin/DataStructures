@@ -6,12 +6,26 @@ package com.github.angads25.model;
  */
 
 public class DoubleEndedNode {
-    public String data;
-    public DoubleEndedNode first, second;
+    private String data;
+    public DoubleEndedNode left, right;
 
     public DoubleEndedNode() {
         data = null;
-        first = null;
-        second = null;
+        left = null;
+        right = null;
+    }
+
+    public DoubleEndedNode(String data) {
+        this.data = data;
+        left = null;
+        right = null;
+    }
+
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
     }
 }

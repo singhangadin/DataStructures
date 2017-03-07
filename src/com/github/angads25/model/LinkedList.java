@@ -6,12 +6,12 @@ package com.github.angads25.model;
  */
 
 public abstract class LinkedList<T> {
-    public T node;
-    public int size;
+    protected T start;
+    protected int size;
 
     public abstract void insertionAtBeginning(String data);
 
-    public abstract void insertionAtPosition(int position, String data);
+    public abstract int insertionAtPosition(int position, String data);
 
     public abstract void insertionAtEnd(String data);
 
@@ -21,5 +21,10 @@ public abstract class LinkedList<T> {
 
     public abstract String deletionFromEnd();
 
-    public abstract int traverse();
+    @Override
+    public abstract String toString();
+
+    public int size() {
+        return size;
+    }
 }
