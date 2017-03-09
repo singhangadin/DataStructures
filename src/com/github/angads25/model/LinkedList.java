@@ -5,21 +5,21 @@ package com.github.angads25.model;
  * </p>
  */
 
-public abstract class LinkedList<T> {
+public abstract class LinkedList<T, D> {
     protected T start;
     protected int size;
 
-    public abstract void insertionAtBeginning(String data);
+    public abstract void insertionAtBeginning(D data);
 
-    public abstract int insertionAtPosition(int position, String data);
+    public abstract int insertionAtPosition(int position, D data);
 
-    public abstract void insertionAtEnd(String data);
+    public abstract void insertionAtEnd(D data);
 
-    public abstract String deletionFromBeginning();
+    public abstract D deletionFromBeginning();
 
-    public abstract String deletionFromPosition(int position);
+    public abstract D deletionFromPosition(int position);
 
-    public abstract String deletionFromEnd();
+    public abstract D deletionFromEnd();
 
     @Override
     public abstract String toString();

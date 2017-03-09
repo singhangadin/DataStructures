@@ -4,25 +4,25 @@ package com.github.angads25.model;
  * Created by Angad on 06-03-2017.
  * </p>
  */
-public class SingleEndedNode {
-    private String data;
-    public SingleEndedNode next;
+public class SingleEndedNode<T> {
+    private T data;
+    public SingleEndedNode<T> next;
 
     public SingleEndedNode() {
         data = null;
         next = null;
     }
 
-    public SingleEndedNode(String data) {
+    public SingleEndedNode(T data) {
         this.data = data;
         next = null;
     }
 
-    public String getData() {
+    public T getData() {
         return data;
     }
 
-    public void setData(String data) {
+    public void setData(T data) {
         this.data = data;
     }
 }
