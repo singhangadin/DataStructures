@@ -1,7 +1,7 @@
 package com.github.angads25.linkedlist;
 
-import com.github.angads25.model.LinkedList;
-import com.github.angads25.model.SingleEndedNode;
+import com.github.angads25.model.datastructure.LinkedList;
+import com.github.angads25.model.node.SingleEndedNode;
 
 /**<p>
  * Created by Angad on 06-03-2017.
@@ -157,6 +157,9 @@ public class SinglyLinkedList<T> extends LinkedList<SingleEndedNode<T>, T> {
     public void rotate(int k) {
         //TODO Do This Without Help!
         //Rotate Counter-Clockwise
+        for(int i = 0 ; i<k ; i++) {
+            insertionAtEnd(deletionFromBeginning());
+        }
     }
 
     //Using another list
